@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iChat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+    <script defer src="client.js"></script>
+    
+
+  </head>
+  <body>
+    <nav>
+        <img src="chat.jpg" alt="ERROR" class="logo" />
+        <h1 class="h1">Welcome to iChat App</h1>
+        <div class="temp">
+        <h1 class="title1">Welcome to iChat App</h1> <br>
+        <h3 class="title2">Enter your name in the prompt to enter the  group chat</h3> <br>
+        <!-- <input type="text" name="personName" id="personName" placeholder="Enter your name..."> -->
+        <br>
+        <button class="enter" type="submit" id="enter">Enter</button>
+    </div>
+    </nav>
+    <div class="main">
+    <div class="container" id="container">
+        <div class="heading">
+            <img src="group.jfif" alt="" class="groupIcon">
+        <h1 class="groupheading">Group</h1>
+        <div class="close"><h3>X</h3></div>
+    </div>
+    <hr>
+     
+      <!-- <div class="message right">I am Ansh</div> -->
+      <!-- <div class="message middle"></div> -->
+      <!-- <div class="message left">I am sarin</div> -->
+    </div>
+    <div class="send">
+      <form action="#" id="send-container">
+        <input type="text" name="messageInp" id="messageInp" placeholder="Type a message..."/>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+</div>
+   
+  </body>
+ 
+</html>
